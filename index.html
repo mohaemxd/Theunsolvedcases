@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE UNSOLVED CASE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <style>
+        .pictures-container {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            padding: 10px;
+            max-width: 100px;
+            margin: 0 auto;
+        }
+        
+        .picture {
+            width: 60%;
+            margin-bottom: 20px;
+            box-sizing: content-box;
+            padding: 10px;
+            background-color: #000000;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .picture img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .picture img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        body {
+            background: rgb(255, 255, 255);
+        }
+          
+        [data-tab-info] {
+            display: none;
+        }
+          
+        .active[data-tab-info] {
+            display: block;
+        }
+          
+        .tab-content {
+            font-size: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            color: rgb(0, 0, 0);
+        }
+          
+        .tabs {
+            font-size: 10px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            margin: 0;
+        }
+          
+        .tabs span {
+            background: rgb(0, 0, 0);
+            padding: 10px;
+            border: 1px solid #b8552e;
+        }
+          
+        .tabs span:hover {
+            background: rgb(241, 16, 16);
+            cursor: pointer;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <span data-tab-value="#Home">HOME</span>
+        <span data-tab-value="#About">ABOUT</span>
+        <span data-tab-value="#tab_3">Tab-3</span>
+    </div>
+  
+    <div class="tab-content">
+        <div class="tabs__tab active" id="HOME" data-tab-info>
+           <p>
+            <header>
+                <h1>THE UNSOLVED CASES</h1>
+            </header>
+            <main>
+                <h1>Free Printable Unsolved Cases's files</h1>
+                <section id="Case Files">
+                    <h2>Our Cases </h2>
+                    <div id="search-bar">
+                        <input type="text" id="search-input" placeholder="Search Here...">
+                        <select>
+                            <option value="Cold Cases">All Categories </option>
+                            <option value="Murder Cases"> Murder Cases</option>
+                        </select>
+                    </div>
+                    <div id="case-list">
+                        <div class="case-card" onclick="location.href='The Midnight Mansion Murder.html'">
+                            <h3>The Midnight Mansion Murder</h3>
+                            <div class="picture">
+                                <img src="newspaper 1_page-0001.jpg" alt="Picture 1">
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1mzd7VwkdPA-yUjNWAIIkKbkkcvA6BsR3?usp=sharing" class="download-link">Download</a>
+                            <p>Click Here for more details.</p>
+                        </div>
+                        <div class="case-card" onclick="location.href='case-details-2.html'">
+                            <h3>Coming Soon</h3>
+                            <p>Description of The Case...</p>
+                            <a href="assigned-url-2" class="download-link">Download</a>
+                        </div>
+                        <div class="case-card" onclick="location.href='case-details-3.html'">
+                            <h3>Coming Soon</h3>
+                            <p>Description of The case...</p>
+                            <a href="assigned-url-3" class="download-link">Download</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2023 THE UNSOLVED CASES. All rights reserved.</p>
+            </footer>
+            <script>
+                $(document).ready(function() {
+                    const caseNames = ["The Midnight Mansion Murder", "Coming Soon", "Coming Soon"]; // Replace with your case names
+            
+                    $("#search-input").autocomplete({
+                        source: caseNames,
+                        select: function(event, ui) {
+                            const selectedCaseName = ui.item.value;
+                            const caseIndex = caseNames.indexOf(selectedCaseName) + 1;
+                            window.location.href = `The Midnight Mansion Murder.html`;
+                        }
+                    }).autocomplete("instance")._renderItem = function(ul, item) {
+                        return $("<li>")
+                            .append("<div>" + item.label + "</div>")
+                            .appendTo(ul);
+                    };
+                });
+            </script>
+           </p>
+        </div>
+        <div class="tabs__tab" id="About" data-tab-info>
+            <p>
+                **About Uncovered Secrets: The Ultimate Unsolved Cases Board Game**
+
+Welcome to the captivating realm of Uncovered Secrets: where mystery, intrigue, and cunning investigations collide in an immersive board game experience. If you're passionate about unraveling enigmatic puzzles, deciphering cryptic clues, and exposing concealed truths, then prepare for an unforgettable journey.
+
+**The Essence of the Game:**
+
+Uncovered Secrets is more than just a board game; it's an enthralling voyage that transports players into the roles of astute detectives. Assemble your team of investigators, harness your intellect, and plunge into meticulously crafted cases that will push your deductive abilities to their limits. Each case stands alone as a unique story, teeming with suspense and hidden revelations waiting to be discovered.
+
+**What Distinguishes Us:**
+
+1. **True Detective Experience:** The Uncovered Secrets game has been meticulously designed to offer an authentic and immersive detective experience. From collecting evidence and scrutinizing crime scenes to interviewing witnesses and forging connections, every phase mirrors the complexities of real investigative work.
+
+2. **Engaging Gameplay:** Our game seamlessly blends strategy, collaboration, and critical thinking. Team up with your fellow detectives to untangle the truth, leveraging your individual strengths to overcome obstacles and challenges.
+
+3. **Narrative Depth:** Immerse yourself in compelling narratives that will seize your attention from the very first clue. Every case is carefully woven with intricate plots and unforeseen twists that will leave you eager to uncover every facet.
+
+**The Uncovered Secrets Website:**
+
+This website serves as your gateway to the captivating universe of Uncovered Secrets. Here, you'll find a trove of downloadable and printable PDF case files that enable you to dive into the game. The cases encompass a spectrum of difficulty levels and intricacies, catering to both newcomers and seasoned detectives.
+
+**Embarking on Your Journey:**
+
+1. **Select Your Case:** Browse through our array of captivating cases, spanning from classic whodunits to perplexing cold cases and high-stakes espionage thrillers. There's a mystery tailored to every enthusiast.
+
+2. **Download and Print:** Once you've chosen your desired case, simply access the download link. The PDF file equips you with all the essential components to initiate your investigation.
+
+3. **Assemble Your Team:** Rally your team of fellow detectives and prepare to delve into the core of the enigma. Armed with your printed case files, you're primed to commence connecting the puzzle pieces.
+
+4. **Unveil the Truth:** Immerse yourselves in the case, meticulously examining evidence, decoding messages, and interrogating suspects. Collaborate to solve the mystery and unearth the concealed reality.
+
+**Join the Detective Community:**
+
+We firmly believe that the thrill of cracking a mystery is best shared. Engage with our vibrant detective community, where you can dissect cases, share insights, and exchange tactics with fellow players spanning the globe.
+
+Are you primed to take on the challenge? Immerse yourself in the universe of Uncovered Secrets and relish the excitement of solving cases like never before. Download your initial case file, and let the pursuit of truth commence!
+            </p>
+  
+        </div>
+        <div class="tabs__tab" id="tab_3" data-tab-info>
+            <p>Learn cool stuff.</p>
+  
+        </div>
+    </div>
+    <script type="text/javascript">
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+  
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+  
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('active')
+                })
+                target.classList.add('active');
+            })
+        })
+    </script> 
+</body>
+</html>

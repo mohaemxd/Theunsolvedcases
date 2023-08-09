@@ -1,0 +1,62 @@
+<header>
+        <h1>THE UNSOLVED CASES</h1>
+        <div class="picture">
+            <img align="right"
+                 src="Photograph 7.png" alt="Picture 1">
+        </div>
+    </header>
+    <div class="tabs">
+        <span data-tab-value="#tab_1">Tab-1</span>
+        <span data-tab-value="#tab_2">Tab-2</span>
+        <span data-tab-value="#tab_3">Tab-3</span>
+    </div>
+    <main>
+        <section id="Case Files">
+            <h2>Cases </h2>
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <select>
+                    <option value="">All Categories</option>
+                    <!-- Category options here -->
+                </select>
+            </div>
+            <div id="case-list">
+                <div class="case-card" onclick="location.href='The Midnight Mansion Murder.html'">
+                    <h3>The Midnight Mansion Murder</h3>
+                    <p>Click Here for more details.</p>
+                    <a href="https://drive.google.com/drive/folders/1mzd7VwkdPA-yUjNWAIIkKbkkcvA6BsR3?usp=sharing" class="download-link">Download</a>
+                </div>
+                <div class="case-card" onclick="location.href='case-details-2.html'">
+                    <h3>Case Name 2</h3>
+                    <p>Description of Case 2...</p>
+                    <a href="assigned-url-2" class="download-link">Download</a>
+                </div>
+                <div class="case-card" onclick="location.href='case-details-3.html'">
+                    <h3>Case Name 3</h3>
+                    <p>Description of Case 3...</p>
+                    <a href="assigned-url-3" class="download-link">Download</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 THE UNSOLVED CASE. All rights reserved.</p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            const caseNames = ["The Midnight Mansion Murder", "Case Name 2", "Case Name 3"]; // Replace with your case names
+    
+            $("#search-input").autocomplete({
+                source: caseNames,
+                select: function(event, ui) {
+                    const selectedCaseName = ui.item.value;
+                    const caseIndex = caseNames.indexOf(selectedCaseName) + 1;
+                    window.location.href = `The Midnight Mansion Murder.html`;
+                }
+            }).autocomplete("instance")._renderItem = function(ul, item) {
+                return $("<li>")
+                    .append("<div>" + item.label + "</div>")
+                    .appendTo(ul);
+            };
+        });
+    </script> 

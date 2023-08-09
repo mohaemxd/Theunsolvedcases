@@ -1,0 +1,245 @@
+/* styles.css */
+/* Style for the tabs container */
+.tabs {
+  display: flex;
+  background-color: #b8552e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Style for individual tabs */
+.tabs span {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  color: #555;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for tabs */
+.tabs span:hover {
+  background-color: #b8552e;
+}
+
+/* Style for the active tab */
+.tabs span.active {
+  background-color: #007bff;
+  color: #b8552e;
+}
+
+body {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #b8552e; /* Red header background */
+    padding: 10px;
+    text-decoration:underline overline firebrick;
+    text-overflow: clip;
+    text-align: Left;
+  }
+  
+  h1 {
+    color: #000000; /* White header text */
+    margin: 0;
+    text-rendering: geometricPrecision;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #f00; /* Red section title */
+  }
+  
+  #search-bar {
+    margin-bottom: 20px;
+  }
+  
+  #search-bar input[type="text"] {
+    padding: 10px;
+    width: 200px;
+  }
+  
+  #search-bar select {
+    padding: 10px;
+  }
+  
+  #case-list {
+    display: ruby-base ;
+    flex-wrap: wrap;
+  }
+  
+  .case-card {
+    background-color: #dfaf14; /* Red case card background */
+    color: #fff; /* White case card text */
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #b8552e; /* Red footer background */
+    color: #fff; /* White footer text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  /* styles.css */
+
+/* ... existing styles ... */
+
+.case-card {
+  background-color: rgb(0, 0, 0); /* Red case card background */
+  color: #fff; /* White case card text */
+  margin: 10px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+
+  /* Additional styles for case file card */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.case-card h3 {
+  margin-top: 0;
+}
+
+.case-card p {
+  margin-bottom: 10px;
+}
+
+.case-card .download-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff; /* White download link background */
+  color: #f00; /* Red download link text */
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.case-card .download-link:hover {
+  background-color: #f00; /* Red hover background */
+  color: #fff; /* White hover text */
+}
+
+/* styles.css */
+
+/* ... existing styles ... */
+
+#community {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px;
+}
+
+#community h2 {
+  color: #fff; /* White heading text */
+}
+
+#forum, #chat {
+  margin-bottom: 40px;
+}
+
+#forum h3, #chat h3 {
+  color: #fff; /* White subheading text */
+}
+
+.forum-post, .chat-messages {
+  background-color: #333; /* Dark gray background */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.forum-post h4, .chat-messages p {
+  color: #fff; /* White text */
+}
+
+.post-footer {
+  color: #999; /* Light gray text */
+  font-size: 14px;
+}
+
+.username {
+  margin-right: 10px;
+}
+
+.timestamp {
+  margin-left: 10px;
+}
+
+#chat-form {
+  margin-top: 20px;
+}
+
+#chat-input {
+  padding: 10px;
+  width: 80%;
+}
+
+#chat-form button {
+  padding: 10px 20px;
+  background-color: #fff; /* White button background */
+  color: #000; /* Black button text */
+  border: none;
+  cursor: pointer;
+}
+
+#chat-form button:hover {
+  background-color: #000; /* Black hover background */
+  color: #fff; /* White hover text */
+}
+
+/* styles.css */
+
+/* ... existing styles ... */
+
+#TheMidnightMansionMurder {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  padding: 20px;
+}
+
+#TheMidnightMansionMurder h2 {
+  color: #000; /* Black heading text */
+}
+
+#case-photos img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+#case-description {
+  margin-bottom: 20px;
+}
+
+#case-description h3 {
+  color: #000; /* Black subheading text */
+}
+
+#case-description p {
+  margin-bottom: 10px;
+}
+
+#user-feedback {
+  margin-bottom: 20px;
+}
+
+#user-feedback h3 {
+  color: #000; /* Black subheading text */
+}
+
+/* Add additional styles as needed */
